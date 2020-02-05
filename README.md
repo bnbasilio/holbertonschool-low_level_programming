@@ -1,2 +1,1 @@
-
-jkvn;alks;
+This repository includes my project files from Holberton School written in the C language
