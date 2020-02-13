@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the first 50 Fibonacci numbers
+ * main - prints the first 98 Fibonacci numbers
  * Return: 0
  */
 int main(void)
@@ -12,16 +12,16 @@ int main(void)
 	num = 2;
 	printf("%.0f, %.0f, ", prevnum, num);
 	count = 3;
-	while (count < 99)
+	while (count < 98)
 	{
-		if (count < 99)
+		if (count < 98)
 		{
 			sum = prevnum + num;
 			printf("%.0f", sum);
 			prevnum = num;
 			num = sum;
 			count++;
-			if (count < 99)
+			if (count < 98)
 			{
 				printf(", ");
 			}
