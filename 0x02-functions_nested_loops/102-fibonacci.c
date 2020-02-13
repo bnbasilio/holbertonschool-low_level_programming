@@ -11,7 +11,7 @@ int main(void)
 	prevnum = 1;
 	num = 2;
 	printf("%ld, %ld, ", prevnum, num);
-	count = 3;
+	count = 2;
 	while (count < 50)
 	{
 		if (count < 50)
