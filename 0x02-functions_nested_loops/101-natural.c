@@ -7,6 +7,7 @@ int main(void)
 {
 	int n, mod3, mod5, sum;
 
+	sum = 0;
 	for (n = 0; n < 1024; n++)
 	{
 		mod3 = n % 3;
