@@ -6,15 +6,9 @@
  */
 void print_times_table(int n)
 {
-	int a;
-	int b;
-	int c;
+	int a, b, c;
 
-	if (n > 15 || n < 0)
-	{
-		return;
-	}
-	else
+	if (n <= 15 && n >= 0)
 	{
 		for (a = 0; a <= n; a++)
 		{
@@ -22,9 +16,7 @@ void print_times_table(int n)
 			{
 				c = a * b;
 				if (b == 0)
-				{
 					_putchar('0');
-				}
 				else if (c < 10)
 				{
 					_putchar(' ');
