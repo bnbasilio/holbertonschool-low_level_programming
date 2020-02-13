@@ -11,17 +11,17 @@ int main(void)
 	prevnum = 1;
 	num = 2;
 	printf("%.0f, %.0f, ", prevnum, num);
-	count = 2;
-	while (count < 98)
+	count = 3;
+	while (count < 99)
 	{
-		if (count < 98)
+		if (count < 99)
 		{
 			sum = prevnum + num;
 			printf("%.0f", sum);
 			prevnum = num;
 			num = sum;
 			count++;
-			if (count < 98)
+			if (count < 99)
 			{
 				printf(", ");
 			}
