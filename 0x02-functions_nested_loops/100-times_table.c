@@ -24,17 +24,12 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					write(1, "   ", 3);
-					/*_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');*/
 					_putchar('0' + c);
 				}
 				else if (c < 100 && c >= 10)
 				{
 					_putchar(',');
 					write(1, "  ", 2);
-					/*_putchar(' ');
-					_putchar(' ');*/
 					_putchar('0' + c / 10);
 					_putchar('0' + c % 10);
 				}
@@ -47,9 +42,7 @@ void print_times_table(int n)
 					_putchar('0' + c % 10);
 				}
 				if (b == n)
-				{
 					_putchar('\n');
-				}
 			}
 		}
 	}
