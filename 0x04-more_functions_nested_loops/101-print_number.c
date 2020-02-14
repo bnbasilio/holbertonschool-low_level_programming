@@ -6,8 +6,8 @@
  */
 void print_number(int n)
 {
-	int m, count, divisor, digit, i;
-	
+	int m, count, divisor, digit, i, j, x;
+
 	i = 0;
 	m = n;
 	if (n < 0)
@@ -24,7 +24,9 @@ void print_number(int n)
 	{
 		n = n / 10;
 	}
-	while (m > 0)
+	/*while (m > 0)*/
+	x = count;
+	for (j = 0; j < x; j++)
 	{
 		divisor = 1;
 		for (i = 0; i < (count - 1); i++)
