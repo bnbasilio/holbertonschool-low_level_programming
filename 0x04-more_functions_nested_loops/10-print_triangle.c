@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_triangle - prints a triangle
- * @n: number of times \ should be printed
+ * @size: how tall the triangle is
  * Return: none
  */
 void print_triangle(int size)
