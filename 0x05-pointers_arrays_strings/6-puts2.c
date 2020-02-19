@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  *puts2 - prints every other character of a string, starting from 1st char
- *@str - input string
+ *@str: input string
  */
 void puts2(char *str)
 {
