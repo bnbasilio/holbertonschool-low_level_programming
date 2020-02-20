@@ -6,6 +6,8 @@
  */
 char *leet(char *s)
 {
+	char *t = s;
+
 	while (*s)
 	{
 		if (*s == 'a' || *s == 'A')
@@ -30,6 +32,6 @@ char *leet(char *s)
 		}
 		s++;
 	}
-	return (s);
+	return (t);
 }
 
