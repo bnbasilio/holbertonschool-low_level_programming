@@ -4,6 +4,7 @@
  *@dest: string as to which src is appended to
  *@src: string to be appended to dest
  *@n: max number of characters to be used from src
+ *Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
