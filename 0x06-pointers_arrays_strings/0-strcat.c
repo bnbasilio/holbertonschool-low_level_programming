@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_strcat - concatenates two strings
+ **_strcat - concatenates two strings
  *@dest: string as to which src is appended to
  *@src: string to be appended to dest
  */
@@ -23,3 +23,4 @@ char *_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
