@@ -29,6 +29,7 @@ int _atoi(char *s)
 		if (*s == '-')
 		{
 			n = -n;
+			s--;
 		}
 		else
 		{
