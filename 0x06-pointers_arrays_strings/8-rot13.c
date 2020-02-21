@@ -18,6 +18,7 @@ char *rot13(char *s)
 			if (*ptr_s == encodeThis[i])
 			{
 				*ptr_s = translateTo[i];
+				break;
 			}
 		}
 		ptr_s++;
