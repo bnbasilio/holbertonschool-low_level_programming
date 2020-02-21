@@ -6,32 +6,22 @@
  */
 char *leet(char *s)
 {
-	char *t = s;
+	int i = 0;
+	char *ptr_s = s;
+	char *spec = "aAeEoOtTlL";
+	char *replaceWith = "4433007711";
 
-	while (*s)
+	while (*ptr_s)
 	{
-		if (*s == 'a' || *s == 'A')
+		for (i = 0; spec[i]; i++)
 		{
-			*s = '4';
+			if (*ptr_s == spec[i])
+			{
+				*ptr_s = replaceWith[i];
+			}
 		}
-		else if (*s == 'e' || *s == 'E')
-		{
-			*s = '3';
-		}
-		else if (*s == 'o' || *s == '0')
-		{
-			*s = '0';
-		}
-		else if (*s == 't' || *s == 'T')
-		{
-			*s = '7';
-		}
-		else if (*s == 'l' || *s == 'L')
-		{
-			*s = '1';
-		}
-		s++;
+		ptr_s++;
 	}
-	return (t);
+	return (s);
 }
 
