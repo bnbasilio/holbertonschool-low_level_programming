@@ -4,7 +4,7 @@
  *@s: string to be encoded
  *Return: s (encoded string)
  */
-char *leet(char *s)
+char *rot13(char *s)
 {
 	int i = 0;
 	char *ptr_s = s;
