@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	char *sep =	" \t\n,;.!?\"(){}";
 	char *ptr_sep = sep;
 	char *t = s;
-	
+
 	capNext = 1;
 	while (*s)
 	{
