@@ -7,11 +7,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *findc = s;
-
-	while (*findc != c && *findc != '\0')
+	while (*s != '\0')
 	{
-		findc++;
+		s++;
+		if (*s == c)
+		{
+			return (s);
+		}
 	}
-	return (findc);
+	s = NULL;
+	return s;
 }
