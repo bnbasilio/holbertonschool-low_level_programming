@@ -3,7 +3,7 @@
  *_strspn - gets the length of a prefix substring
  *@s: string to be scanned
  *@accept: characters we are scanning for
- *return: number of bytes in string s that consists only of chars in accept
+ *Return: number of bytes in string s that consists only of chars in accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
