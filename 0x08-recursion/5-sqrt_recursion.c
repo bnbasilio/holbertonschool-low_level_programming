@@ -2,6 +2,7 @@
 /**
  *sqrt_rec - calculates the square root of numbers 2 and larger
  *@n: number whose square root needs to be calculated
+ *@sqrt: possible square root
  *Return: natural square root of n, -1 otherwise
  */
 int sqrt_rec(int n, int sqrt)
