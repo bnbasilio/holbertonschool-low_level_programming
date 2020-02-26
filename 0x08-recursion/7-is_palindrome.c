@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
  *palindrome_recursive - checks substring of s if palindrome
