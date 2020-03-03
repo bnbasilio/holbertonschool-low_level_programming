@@ -3,7 +3,7 @@
 #include <stdlib.h>
 int _strlen(char *s);
 /**
- *strdup - returns a pointer to the copy of the string used as parameter
+ *_strdup - returns a pointer to the copy of the string used as parameter
  *@str: string to be copied
  *
  *Return: a pointer to the newly allocated memory space of a string's copy
