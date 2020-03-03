@@ -11,11 +11,15 @@ int _strlen(char *s);
 char *_strdup(char *str)
 {
 	char *s;
-	int i;
+	int i, length;
 
 	if (str == NULL)
 		return (NULL);
-	s = malloc(sizeof(char) * sizeof(_strlen(str) + 1));
+	for (i = 0; str[i]; i++)
+	{
+		length++;
+	}
+	s = malloc(sizeof(char) * (length + 1));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
@@ -24,22 +28,5 @@ char *_strdup(char *str)
 	}
 	s[i] = '\0';
 	return (s);
-}
-/**
- *_strlen - returns the length of a string
- *@s: string input
- *Return: length of string input
- */
-int _strlen(char *s)
-{
-	int count;
-	
-	count = 0;
-	while (*s != '\0')
-	{
-		count++;
-		s++;
-	}
-	return (count);
 }
 
