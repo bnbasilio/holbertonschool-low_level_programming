@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		str[i] = s1[i];
 	}
-	for (j = 0; j < n; i++, j++)
+	for (j = 0; s2[j] && j < n; i++, j++)
 	{
 		str[i] = s2[j];
 	}
@@ -47,6 +47,7 @@ int _strlen(char *s)
 {
 	unsigned int length, i;
 
+	length = 0;
 	for (i = 0; s[i]; i++)
 	{
 		length++;
