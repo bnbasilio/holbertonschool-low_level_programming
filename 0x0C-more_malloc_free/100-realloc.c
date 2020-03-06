@@ -12,9 +12,9 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	int *arr;
+	void *arr;
 	unsigned int i;
-	
+
 	if (old_size == new_size)
 		return (ptr);
 	if (new_size == 0 && ptr != NULL)
@@ -27,8 +27,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	for (i = 0; i < old_size; i++)
 	{
-		arr[i] = *((char*)ptr + i);
+		arr[i] = *((char *)ptr + i);
 	}
 	free(ptr);
-	return(arr);
+	return (arr);
 }
