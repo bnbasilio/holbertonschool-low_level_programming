@@ -5,6 +5,7 @@
  *main - performs simple operations on 2 integers
  *@argc: number of arguments passed to the program
  *@argv: array of arguments passed to the program
+ *Return: 0 if successful
  */
 int main(int argc, char *argv[])
 {
