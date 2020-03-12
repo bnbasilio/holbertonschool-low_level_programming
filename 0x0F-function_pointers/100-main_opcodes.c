@@ -28,6 +28,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%02hhx ", *opcode);
 	}
-	printf("\n");
+	printf("%02hhx\n", *opcode);
 	return (0);
 }
