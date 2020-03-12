@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, bytes;
-	char *opcode;
+	unsigned char *opcode;
 
 	bytes = atoi(argv[1]);
 	opcode = (char *) main;
@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < bytes - 1; i++, opcode++)
 	{
-		printf("%02hhx ", *opcode);
+		printf("%02x ", *opcode);
 	}
-	printf("%02hhx\n", *opcode);
+	printf("%02x\n", *opcode);
 	return (0);
 }
