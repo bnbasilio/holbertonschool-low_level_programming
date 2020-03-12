@@ -9,15 +9,16 @@
 int main(int argc, char *argv[])
 {
 	int i, bytes;
-	unsigned char *opcode;
+	char *opcode;
 
-	bytes = atoi(argv[1]);
 	opcode = (char *) main;
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
+
+	bytes = atoi(argv[1]);
 	if (bytes < 0)
 	{
 		printf("Error\n");
@@ -26,8 +27,8 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < bytes - 1; i++, opcode++)
 	{
-		printf("%02x ", *opcode);
+		printf("%02hhx ", *opcode);
 	}
-	printf("%02x\n", *opcode);
+	printf("%02hhx\n", *opcode);
 	return (0);
 }
