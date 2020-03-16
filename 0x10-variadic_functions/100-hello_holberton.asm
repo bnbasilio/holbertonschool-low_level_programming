@@ -1,7 +1,6 @@
 section .data
 
-    message db "Hello, Holberton!", 10
-	msg_len equ $-message
+	message db "Hello, Holberton!", 10
 
 section .text
 
@@ -10,7 +9,7 @@ main:
 	mov rax, 1
 	mov rdi, 1
 	mov rsi, message
-	mov rdx, msg_len
+	mov rdx, 17
 	syscall
 	mov rax, 60
 	mov rdi, 0
