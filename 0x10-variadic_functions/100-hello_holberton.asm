@@ -12,7 +12,6 @@ main:
     mov rsi, message
     mov rdx, msg_len
     syscall
-
 	mov rax, 60
 	mov rdi, 0
 	syscall
