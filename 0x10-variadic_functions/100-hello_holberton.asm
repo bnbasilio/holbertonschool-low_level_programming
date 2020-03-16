@@ -1,6 +1,6 @@
 section .data
 
-	message db "Hello, Holberton!", 10
+	message db 'Hello, Holberton!', 10
 
 section .text
 
@@ -12,5 +12,5 @@ main:
 	mov rdx, 17
 	syscall
 	mov rax, 60
-	mov rdi, 0
+	xor rdi, rdi
 	syscall
