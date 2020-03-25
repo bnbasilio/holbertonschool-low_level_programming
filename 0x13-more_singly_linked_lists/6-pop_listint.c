@@ -3,6 +3,7 @@
 /**
  *pop_listint - deletes the head node of a listint_t and returns its data (n)
  *@head: pointer to beginning of the list
+ *Return: head node's data (n), 0 otherwise
  */
 
 int pop_listint(listint_t **head)
@@ -11,14 +12,14 @@ int pop_listint(listint_t **head)
 	int n;
 	listint_t *temp;
 
-	if (*head != NULL)
-	{
-		n = (*head)->n;
+	if (*head == NULL)
+		return (0);
 
-		temp = *head;
-		*head = temp->next;
-		free(temp);
-	}
+	n = (*head)->n;
+
+	temp = *head;
+	*head = temp->next;
+	free(temp);
 
 	return (n);
 }
