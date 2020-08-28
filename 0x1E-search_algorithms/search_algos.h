@@ -15,7 +15,7 @@
  * for Holberton project
  */
 typedef struct listint_s
-
+{
 	int n;
 	size_t index;
 	struct listint_s *next;
