@@ -38,15 +38,15 @@ int binary_search(int *array, size_t size, int value)
 /**
  * print_subarray - print subarray between two indexes
  * @array: the subarray to print
- * @i: start index
- * @j: end index
+ * @low: start index
+ * @high: end index
  */
-void print_subarray(int *array, size_t i, size_t j)
+void print_subarray(int *array, size_t low, size_t high)
 {
-	size_t k;
+	size_t n;
 
 	printf("Searching in array: ");
-	for (k = i; k < j; k++)
-		printf("%d, ", array[k]);
-	printf("%d\n", array[k]);
+	for (n = low; n < high; n++)
+		printf("%d, ", array[n]);
+	printf("%d\n", array[n]);
 }
