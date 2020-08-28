@@ -18,7 +18,7 @@ int binary_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	while (i <= j)
+	while (low <= high)
 	{
 		print_subarray(array, low, high);
 		mid = (low + high) / 2;
@@ -37,7 +37,7 @@ int binary_search(int *array, size_t size, int value)
 
 /**
  * print_subarray - print subarray between two indexes
- * @array: the array to print
+ * @array: the subarray to print
  * @i: start index
  * @j: end index
  */
